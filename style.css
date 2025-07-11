@@ -1,3 +1,115 @@
-body{
-    background-color: orangered;
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body,html{
+ height: 100%;
+ font-family: Arial, Helvetica, sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=e09541&c2=9323cf&gt=l&gd=dcl
+*/
+background: #E09541;
+background: linear-gradient( #E09541, #9323CF);
+}
+
+.container{
+    display: flex;
+    border: 2px solid red;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(214, 204, 204); 
+}
+
+/* welecome section */
+.left_panel{
+    flex: 1;
+background: linear-gradient(90deg, rgba(35, 149, 194, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+padding: 40px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.left_panel h1{
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.left_panel p{
+    margin-bottom: 10px;
+}
+.left_panel a{
+    color: white;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+
+/* right panel */
+.right_panel{
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right_panel h1{
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid red;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+form button{
+   background: linear-gradient(90deg, rgba(35, 149, 194, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+   color: white;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   text-transform: capitalize;
+   margin-bottom: 10px;
+}
+
+.twitter , .facebook{
+   margin-top: 10px;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   text-transform: capitalize;
+   cursor: pointer;
+}
+.twitter{
+background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.facebook{
+background: #05f59d;
+background: linear-gradient(90deg, rgba(5, 245, 157, 1) 0%, rgba(2, 42, 237, 1) 100%);
 }
